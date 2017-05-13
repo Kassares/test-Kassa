@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg4491"
+   preserveAspectRatio="xMidYMid meet"
+   viewBox="0 0 15.000000 25.000000"
+   height="25.000000pt"
+   width="15.000000pt"
+   version="1.0">
+  <defs
+     id="defs4495" />
+  <metadata
+     id="metadata4485">
+Created by potrace 1.10, written by Peter Selinger 2001-2011
+<rdf:RDF>
+  <cc:Work
+     rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type
+       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:title></dc:title>
+  </cc:Work>
+</rdf:RDF>
+</metadata>
+  <g
+     id="g4489"
+     stroke="none"
+     fill="#ffffff"
+     transform="translate(0.000000,25.000000) scale(0.100000,-0.100000)">
+    <path
+       id="path4487"
+       d="M56 186 c-56 -63 -67 -86 -43 -86 11 0 85 -35 97 -47 8 -7 -24 -23 -47 -23 -12 0 -30 12 -42 28 -19 25 -20 25 -21 6 0 -47 71 -71 118 -38 25 17 30 54 7 54 -8 0 -32 9 -54 21 l-41 21 43 49 42 49 3 -60 c4 -86 22 -74 22 15 0 95 -10 96 -84 11z" />
+  </g>
+</svg>

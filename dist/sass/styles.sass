@@ -1,0 +1,439 @@
+@import 'fonts'
+@import 'media'
+@import 'sprite'
+
+body
+	font-family: $circbook
+	.top
+		padding: 22px 18px 20px 18px
+		border: 1px solid #b9c9e5
+		img
+			float: left
+		input
+			display: none
+			float: right
+			padding-left: 10px
+			height: 35px
+			color: #fff !important
+			border: 1px solid #4b9eff
+			border-radius: 3px
+			width: 90%
+			background-color: #4b9eff
+			background-image: url(../img/search.png)
+			background-repeat: no-repeat
+			background-size: 6%
+			background-position: 95% 50%
+			
+			&::placeholder
+				color: #ffffff
+		ul
+			float: right
+			margin-bottom: 0px
+			li
+				display: inline-block
+				padding: 5px 20px 0px
+				text-align: center
+	.content
+		.col-md-9
+			padding: 0
+			.sort
+				width: 100%
+				height: 59px
+				background: rgba(226, 233, 245, 0.3)
+				padding: 11px
+				p
+					float: left
+					padding-top: 8px
+					padding-left: 23px
+				span
+					float: right
+					color: #323b46
+					font-family: $circbook
+					font-size: 14.0px
+					font-style: normal
+					font-stretch: normal
+					font-weight: 400
+					padding: 8px 9px 0px
+				select
+					float: right
+					height: 37px
+					border: 1px solid #dddddd
+					width: 180px
+					border-radius: 3px
+					padding-left: 10px
+					appearance: none!important
+					background-image: url('/img/down-arrow.png')
+					background-position: 95%
+					background-repeat: no-repeat
+					background-size: 5%
+			.catalog
+				.yacht
+					margin: 10px 20px 0px 30px
+					border: 1px solid #eaf0fa
+					height: 200px
+					.col-md-4
+						padding: 0 
+					.logo-boat
+						padding: 0 !important
+						img
+							margin-right: 24px
+							height: 100%
+							float: left
+					.boat-desc
+						padding-left: 8px
+						padding-right: 0
+					ul
+						margin-top: 33px
+						margin-bottom: 0px
+						padding-left: 0
+						li
+							display: inline-block
+							img
+								margin: 2px
+						a
+							margin-left: 20px
+							margin-top: -5px
+							color: rgba(50, 59, 70, 0.7)
+							font-size: 12.0px
+							font-style: normal
+							font-stretch: normal
+							font-weight: 400
+					div
+						.name-boat
+							color: #323b46
+							font-family: $circbook
+							font-size: 22.0px
+							font-style: normal
+							font-stretch: normal
+							font-weight: 400
+							margin-top: 6px
+						.parametrs
+							width: 100%
+							margin-top: 0px
+							i 
+								float: left
+								margin-right: 5px
+								margin-top: 5px
+							p
+								float: right
+								color: #323b46
+								font-family: $circbook
+								font-size: 16.0px
+								font-style: normal
+								font-stretch: normal
+								font-weight: 400
+							div
+								float: left
+								margin-right: 13px
+						.price 
+							padding-top: 40px
+							padding-right: 40px 
+							float: right
+							span
+								font-size: 12.0px
+								color: rgba(50, 59, 70, 0.7)
+								text-align: right
+								display: block
+								padding-left: 15px
+							p
+								color: #323b46
+								font-size: 20px
+								font-weight: 400
+								font-family: $circbook
+								text-align: right
+								
+							.day
+								float: left
+								width: 75px
+							.week
+								float: left
+								width: 75px
+		.col-md-3
+			padding: 0px
+			.filter-media
+				display: none
+				button
+					width: 100px
+					height: 40px
+					border-radius: 5px
+					background: #fff
+					border: 0
+					box-shadow: 0px 0px 10px #353535
+			.filter-apply
+				display: none
+				button
+					width: 100px
+					height: 40px
+					border-radius: 5px
+					border: 0
+					color: #fff
+					background: #0fc3b2
+					box-shadow: 0px 0px 10px #0fc3b2
+			.filter-wrap
+				width: 100%
+				box-shadow: 0px 0px 2px #b9cae6
+				padding-top: 24px
+				padding-bottom: 30px
+				.filter
+					width: 87.5%
+					height: auto
+					margin: 0 auto
+			
+					div
+						position: relative
+					i
+						position: absolute
+						left: 15px
+						top: 15px
+					select
+						width: 100%
+						height: 48px
+						border: 1px solid #dddddd
+						border-radius: 3px
+						margin: 0 auto
+						margin-bottom: 30px
+						display: block
+						padding-left: 39px
+						appearance: none!important
+						background-image: url('/img/down-arrow.png') 
+						background-position: 95%
+						background-repeat: no-repeat
+						background-size: 4%
+						option
+							height: 48px
+							text-align: center
+							
+					hr
+						border: 1px solid rgba(223, 231, 244, 0.5)
+					.filter-type
+						border: 1px solid #dddddd
+						width: 100%
+						height: 68px
+						border: 1px solid #dddddd
+						border-radius: 3px
+						margin: 0 auto
+						margin-bottom: 30px
+						display: block
+						position: relative
+						.type-active
+							background: #000
+						div
+							width: 25%
+							text-align: center
+							float: left
+							height: 100%
+							border-right: 1px solid rgba(221, 221, 221, 0.5)
+							transition: all 0.3s ease
+						.filter-type_item
+							&.active
+								background: #71A2EA !important
+							i
+								margin: 0 auto !important
+								display: inherit !important
+								bottom: 0px
+								position: inherit
+								left: 0
+								top: 0
+								margin-top: 9px !important
+							p
+								padding-top: 5px
+								font-size: 12px
+								bottom: 5px
+						.filter-type_sale
+							padding-top: 1px
+						.filter-type_catamaran
+							padding-top: 10px
+						.filter-type_mega
+							padding-top: 10px
+					.filter-price 
+						width: 100%
+						height: 170px
+						padding: 20px 15px 36px 15px
+						margin: 0 auto
+						margin-bottom: 30px
+						display: inherit
+						border: 1px solid #dddddd
+						.row
+							margin-left: 0
+							margin-right: 0
+							p
+								color: #33485e
+								font-size: 17.0px
+								float: left
+								padding-top: 4px
+							.time-rent
+								border-radius: 5px
+								float: right
+								width: 150px
+								height: 36px
+								background: #c7dbf9
+								.active
+									background: #71A2EA
+									color: #fff
+								.rent-day
+									text-align: center
+									font-size: 16px
+									float: left
+									padding: 5px
+									width: 50%
+									height: 100%
+									cursor: pointer
+									border-radius: 5px 0px 0px 5px
+									transition: all 0.5s ease
+								.rent-week
+									text-align: center
+									font-size: 16px
+									float: left
+									height: 100%
+									padding: 5px
+									width: 50%
+									border-radius: 0px 5px 5px 0px
+									cursor:pointer
+									transition: all 0.5s ease
+						.price-interval
+							display: block
+							margin-top: 20px
+							input
+								border: 1px solid #dddddd
+								width: 66px
+								height: 36px
+								background: #ffffff
+								border-radius: 4px
+								display: block
+								padding-left: 8px
+							#minCost
+								float: left
+							#maxCost
+								float: right
+						#slider-range
+							margin-top: 15px
+					.filter-captain
+						border: 1px solid #dddddd
+						width: 100%
+						height: 48px
+						border-radius: 3px
+						margin: 0 auto
+						margin-bottom: 30px
+						display: block
+						position: relative
+						padding: 15px 15px 0px 15px
+						p
+							float: left
+							color: #33485e
+							font-size: 16.0px
+						label
+							float: right
+						.switch
+							position: relative
+							display: inline-block
+							width: 34px
+							height: 15px
+						.switch input 
+							display: none
+						.slider 
+							position: absolute
+							cursor: pointer
+							top: 0
+							left: 0
+							right: 0
+							bottom: 0
+							background: #eaf1fc
+							-webkit-transition: .4s
+							transition: .4s
+						.slider:before 
+							position: absolute
+							content: ""
+							height: 26px
+							width: 26px
+							left: -5px
+							bottom: -5px
+							background: #71a2ea
+							-webkit-transition: .4s
+							transition: .4s
+						input:checked + .slider 
+							background-color: #2196F3
+						input:focus + .slider 
+							box-shadow: 0 0 1px #2196F3
+						input:checked + .slider:before 
+							-webkit-transform: translateX(26px)
+							-ms-transform: translateX(26px)
+							transform: translateX(26px)
+						.slider.round 
+							border-radius: 34px
+						.slider.round:before
+							border-radius: 50%
+					.filter-cabins
+						width: 100%
+						margin: 0 auto
+						margin-bottom: 30px
+						label
+							font-size: 16px
+							color: rgba(51, 72, 94, 0.6)
+							font-weight: 400
+						.f-cabins
+							width: 100%
+							height: 48px
+							margin: 0 auto
+							border: 1px solid #dddddd
+							border-radius: 3px
+							.number-cabins
+								width: 25%
+								height: 100%
+								text-align: center
+								float: left
+								padding-top: 12px
+								border-right: 1px solid #dddddd
+								a 
+									font-size: 16.0px
+									color: #33485e
+					.filter-lenght
+						width: 100%
+						margin: 0 auto
+						margin-bottom: 30px
+						label
+							font-size: 16px
+							color: rgba(51, 72, 94, 0.6)
+							font-weight: 400
+						.f-lenght
+							width: 100%
+							height: 48px
+							margin: 0 auto
+							border: 1px solid #dddddd
+							border-radius: 3px
+							.lenght-one
+								width: 25%
+								height: 100%
+								text-align: center
+								float: left
+								padding-top: 11px
+								border-right: 1px solid #dddddd
+							p
+								font-size: 15.0px
+								color: #33485e
+								margin-bottom: -7px
+							label
+								margin-top: 0px
+								color: rgba(51, 72, 94, 0.4)
+								font-size: 12.0px
+								font-weight: 400
+								
+					.more-filters
+						border: 1px solid #71a2ea
+						width: 180px
+						height: 48px
+						text-align: center
+						padding-top: 15px
+						border-radius: 3px
+						margin: 0 auto
+						margin-bottom: 40px
+						transition: all 1s ease
+						&:hover
+							background: #71A2EA
+							cursor: pointer
+							a
+								color: #ffffff
+						a 
+							font-size: 16px
+							width: 100%
+							height: 100%
+							color: #70A1E9
